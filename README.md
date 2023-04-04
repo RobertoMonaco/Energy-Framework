@@ -1,6 +1,5 @@
-# Energy-Framework
+# Ontology supporting the development of industrial energy management systems
 
-# Jena Fuseki Project
 
 This project demonstrates how to use Apache Jena Fuseki Server to work with the ontology that supports the development of industrial energy management systems. The project consists of several parts, including loading data into the Jena Fuseki server, validating an ontology against the data, and querying triples using a Java program.
 
