@@ -19,7 +19,7 @@ public class ValidateOntology {
         OntModel ontModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
 
         // Read the ontology file
-        File ontologyFile = new File("ontology.owl");
+        File ontologyFile = new File("src/resources/ontology.owl");
         try (FileInputStream ontologyInputStream = new FileInputStream(ontologyFile)) {
             ontModel.read(ontologyInputStream, null, "RDF/XML");
         } catch (FileNotFoundException e) {
@@ -37,7 +37,7 @@ public class ValidateOntology {
         Model dataModel = ModelFactory.createDefaultModel();
 
         // Read the data file
-        File dataFile = new File("data.nt");
+        File dataFile = new File("src/resources/data.nt");
         try (FileInputStream dataInputStream = new FileInputStream(dataFile)) {
             dataModel.read(dataInputStream, null, "RDF/XML");
         } catch (FileNotFoundException e) {

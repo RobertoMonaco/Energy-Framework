@@ -20,7 +20,7 @@ public class LoadNTFileToJena {
 
         // Load the output.nt file into a Jena Model
         Model model = ModelFactory.createDefaultModel();
-        File inputFile = new File("data.nt");
+        File inputFile = new File("src/resources/data.nt");
         try (FileInputStream inputStream = new FileInputStream(inputFile)) {
             RDFDataMgr.read(model, inputStream, null, RDFDataMgr.defaultSerializationNTriples);
         } catch (FileNotFoundException e) {

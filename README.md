@@ -2,16 +2,22 @@
 
 # Jena Fuseki Project
 
-This project demonstrates how to use Apache Jena Fuseki Server to work with an proposed ontology for industrial energy management systems. The project consists of several parts, including loading data into the Jena Fuseki server, validating an ontology against the data, and querying triples using a Java program.
+This project demonstrates how to use Apache Jena Fuseki Server to work with the ontology that supports the development of industrial energy management systems. The project consists of several parts, including loading data into the Jena Fuseki server, validating an ontology against the data, and querying triples using a Java program.
 
 ## Project Description
 
 This project is divided into several parts:
 
-1. Installing Jena Fuseki Server
-2. Loading data into Jena Fuseki Server
-3. Validating the ontology
-4. Querying triples using a Java program
+1. Generating N-triples data
+2. Installing Jena Fuseki Server
+3. Loading data into Jena Fuseki Server
+4. Validating the ontology
+5. Querying triples using a Java program
+
+## How to Generate N-triples
+
+1. Make sure you have the Java Development Kit (JDK) installed on your system.
+2. Compile and run the `NTripleDataGenerator.java` file in the `src/main/java` directory of the project. This program generates N-triple data based on the `ontology.owl` file and saves the output in the `resources` directory as `data.nt`.
 
 ## How to Install Jena Fuseki Server
 
@@ -25,7 +31,7 @@ This project is divided into several parts:
 1. Access the Jena Fuseki web interface by opening a browser and navigating to `http://localhost:3030`.
 2. Click on "Manage Datasets" and then on "Add new dataset".
 3. Enter the dataset name (e.g., `emb3rs`) and click on "Create Dataset".
-4. Click on the "Upload data" button, then choose and upload the `output.nt` file.
+4. Click on the "Upload data" button, then choose and upload the `data.nt` file (under src/resources directory).
 
 ## How to Validate the Ontology
 

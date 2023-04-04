@@ -19,7 +19,7 @@ public class JenaInference {
         OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
 
         // Read the ontology into the model
-        model.read("file:ontology.owl");
+        model.read("file:src/resources/ontology.owl");
 
         // Create an inference model using Jena's OWL reasoner
         Reasoner reasoner = OWLFBRuleReasonerFactory.theInstance().create(null);
